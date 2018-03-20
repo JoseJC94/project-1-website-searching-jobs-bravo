@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+
+
+    <head>
+        <title>Diseño de sistios Web: Proyecto Número 1</title>
+        <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Kantumruy' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-12">
+                <header>
+                    <h1 class="titulo"> Work & talent </h1>
+                </header>
+            </div>
+        </div>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Todos los trabajos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">&#191Necesitas ayuda?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Sobre nosotros</a>
+            </li>
+        </ul>
+
+
+        <div class="row">
+            <div class="col-sm-3" id="aside">
+                <img id="logo" src="images/logo.png" alt="logo" class="media-object" >
+
+                
+                <button type="button" id="TT" class="btn btn-primary">Tiempo Completo</button>
+                
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Nivel de experiencia</li>
+                </ul>
+
+                <div class="list-group">
+
+                    <button type="button" class="list-group-item list-group-item-action">Junior</button>
+                    <button type="button" class="list-group-item list-group-item-action">Mid</button>
+                    <button type="button" class="list-group-item list-group-item-action">Senior</button>
+
+                </div>
+                
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Por fecha</li>
+                </ul>
+
+                <div class="list-group">
+
+                    <button type="button" class="list-group-item list-group-item-action">Último mes</button>
+                    <button type="button" class="list-group-item list-group-item-action">Última semana</button>
+                    <button type="button" class="list-group-item list-group-item-action">Último día</button>
+
+                </div>
+                
+            </div>
+
+                <div class="col-sm-9" id="busca">
+
+                    <form class="form-inline" action="">
+                        <div class="form-group">
+                            <label for="trabajo"><strong>Descripción del trabajo:</strong> </label>
+                            <input type="text" size="50" class="form-control" id="trabajo" placeholder="Digite el trabajo" name="trabajo">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena"><strong>Localización: </strong></label>
+                            <input type="text" size="50" class="form-control" id="contrasena" placeholder="Digite localización" name="contrasena">
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <footer>
+
+                        <img id="logo_peque" src="images/logo_peque.png" alt="logo" class="media-object" >
+
+                        &#169 2018 Work & talent. Derechos reservados <br>
+
+                    </footer>
+                </div>
+            </div>
+    </body>
+
+</html>
