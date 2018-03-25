@@ -71,4 +71,15 @@ input[type=submit]:hover {
   margin-left: 120px;
   margin-bottom: 20px; }
 
+  div.slidediv {
+      width:1500px;
+      height:1000px;
+      min-width:150px;
+      min-height:100px;
+      max-width:200px;
+      max-height:100px;
+      overflow:hidden;
+      display:block;
+    }
+
 /*# sourceMappingURL=style.css.map */
