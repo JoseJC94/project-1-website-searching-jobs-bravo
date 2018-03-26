@@ -82,4 +82,9 @@ input[type=submit]:hover {
       display:block;
     }
 
+ .cardimage {
+   width: 150px;
+   height: 180px;
+ }
+
 /*# sourceMappingURL=style.css.map */
