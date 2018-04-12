@@ -16,7 +16,26 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="./js/scripts.js"></script>
-
+  <Script Language="JavaScript">
+    function DameLaFechaHora() {
+      var hora = new Date()
+      var hrs = hora.getHours();
+      var min = hora.getMinutes();
+      var hoy = new Date();
+      var m = new Array();
+      var d = new Array()
+      var an= hoy.getYear();
+      m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+      m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+      m[6]="Julio";    m[7]="Agosto";   m[8]="Septiembre";
+      m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+      document.write("Visita realizada a las "+hrs+":"+min+" (");
+      document.write(hoy.getDate());
+      document.write(" de ");
+      document.write(m[hoy.getMonth()]);
+      document.write(")");
+    }
+  </Script>
     </head>
     <body>
         <div class="row">
@@ -140,20 +159,52 @@
                                         <div class="card-body d-flex flex-column align-items-start">
                                             <strong class="d-inline-block mb-2 text-success">Work & Talent</strong>
                                             <h3 class="mb-0">
-                                                <a class="text-dark" href="#">Company Description</a>
+                                                <h2>Descripción de la empresa</h2>
                                             </h3>
-                                            <div class="mb-1 text-muted">March 25</div>
+                                            <div class="mb-1 text-muted"><script>
+                                                DameLaFechaHora();
+                                                </script></div>
                                             <p class="card-text mb-auto">
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                                                ex ea commodo consequat. Duis autem vel eum iriure dolor in
-                                                hendrerit in vulputate velit esse molestie consequat.
+                                                Work and Talent es una herramienta profesional que permite encontrar 
+                                                proveedores o contactar con potenciales clientes. Éste un sitio web 
+                                                especializado que integra oferta y demanda laboral que existe en el mercado.
+                                                El objetivo principal de este espacio es ofrecer a sus usuarios un servicio
+                                                de búsqueda de trabajo en línea, de manera rápida y simple.Muchos usuarios
+                                                encuentran una oportunidad para darse a conocer profesionalmente,
+                                                una oportunidad para encontrar 
+                                                un puesto de trabajo o encontrar colaboradores profesionales.
                                             </p>
                                         </div>
-                                        <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" src="./images/logo.png"  data-holder-rendered="true">
+                                        <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" src="./images/image2_opt.jpg"  data-holder-rendered="true">
                                     </div>
+                                    
+                                    
+                                    
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <img id="logo" src="images/image3.jpg" alt="image3" class="img-fluid" >
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <h2>Misión</h2>
+                                    <p class="cuerpo">Nuestra misión siempre ha sido poder proporcionar a 
+                                        todos y cada uno de los solicitantes de empleo una lista 
+                                        completa de puestos de trabajo en todo 
+                                        el mundo para que así encuentren su trabajo de ensueño en
+                                     las empresa ideales. Por esta razón fundamos la comunidad 
+                                     profesional más transparente del mundo.</p>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <h2>Visión</h2>
+                                    <p class="cuerpo">
+                                        Mejorar y establecer más y mejores oportunidades económicas 
+                                        para cada uno de los miembros del mercado laboral 
+                                        mundial, sin afectar a ninguna clase trabajadora en el proceso. Todo esto 
+                                        gracias al desarrollo ininterrumpido 
+                                        del gráfico económico global.
+                                    </p>
                                 </div>
                             </div>
                         </div>
