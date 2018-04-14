@@ -85,7 +85,7 @@
 
                                 <div class="col-sm-9" id="busca">
                                     <div  id="wrap">
-                                        <form class="form-inline" action="">
+                                        <div class="form-inline" >
                                             <div class="form-group">
                                                 <label for="trabajo"><strong>Descripción del trabajo:</strong> </label>
                                                 <input type="text" size="50" class="form-control" id="trabajo" placeholder="Digite el trabajo" name="trabajo">
@@ -94,9 +94,13 @@
                                                 <label for="contrasena"><strong>Localización: </strong></label>
                                                 <input type="text" size="50" class="form-control" id="contrasena" placeholder="Digite localización" name="contrasena">
                                             </div>
-                                            <button type="submit" class="btn btn-default" id="buston">Buscar</button>
-                                        </form>
-                                        <div id="trabajosContent" name="trabajosContent"></div>
+                                            <button class="btn btn-default" onclick="getTrabajosDesLoc();" id="buston">Buscar</button>
+                                        </div>
+                                        <div id="trabajosContent" name="trabajosContent">
+                                            <table id="trabajoslist">
+                                                <tbody id='tableContent'></tbody>
+                                            </table>
+                                        </div>
                                     </div>   
 
                                 </div>
