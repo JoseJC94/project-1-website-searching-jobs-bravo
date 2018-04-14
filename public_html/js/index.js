@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("ready");
     consumirTrabajos();
 });
 
@@ -30,8 +29,15 @@ function consumirTrabajos() {
         dataType: 'jsonp',
         success: function (data) {
             var json = data;
-            console.log("data " + json);
-            $("#trabajosContent").append("<label> " + JSON.stringify(json) + "</label>" );
+            var content = "";
+            jQuery.each(json, function() {
+                content = content + "<div>";
+                content = content + "<label>ID: "+ this.id +"</label>";
+                content = content + "<label>Titulo: "+ this.title +"</label>";
+                content = content + "<label>Descripcion: "+ this.description +"</label>";
+                content = content + "</div>";
+            });
+            $("#trabajosContent").append(content);
         },
         error: function (data) {
             console.log("error ");
