@@ -5,7 +5,7 @@
 
     <head>
         <title>Diseño de sistios Web: Proyecto Número 1</title>
-        <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -16,26 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="./js/scripts.js"></script>
-  <Script Language="JavaScript">
-    function DameLaFechaHora() {
-      var hora = new Date()
-      var hrs = hora.getHours();
-      var min = hora.getMinutes();
-      var hoy = new Date();
-      var m = new Array();
-      var d = new Array()
-      var an= hoy.getYear();
-      m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
-      m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
-      m[6]="Julio";    m[7]="Agosto";   m[8]="Septiembre";
-      m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
-      document.write("Visita realizada a las "+hrs+":"+min+" (");
-      document.write(hoy.getDate());
-      document.write(" de ");
-      document.write(m[hoy.getMonth()]);
-      document.write(")");
-    }
-  </Script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <div class="row">
@@ -115,6 +96,7 @@
                                             </div>
                                             <button type="submit" class="btn btn-default" id="buston">Buscar</button>
                                         </form>
+                                        <div id="trabajosContent" name="trabajosContent"></div>
                                     </div>   
 
                                 </div>
