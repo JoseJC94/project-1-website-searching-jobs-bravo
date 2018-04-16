@@ -12,13 +12,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="js/banco.js"></script>
+        <script src="js/main.js"></script>
+
 
     </head>
     <body>
 
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-md-12">
 
                     <div class="wrap">
@@ -27,19 +30,37 @@
 
                         <form class="login">
                             <img id="logo" src="images/logo2.png" alt="logo" class="media-object" >
-                            <input type="text" placeholder="Nombre de usuario" />
-                            <input type="password" placeholder="Contraseña" />
-                            <input type="password" placeholder="Repita la contraseña" />
-                            <input type="submit" value="Crear cuenta" class="btn btn-primary btn-sm" />
+                            <input type="hidden" id="field-id" value="" />
+                            <input type="text" id="field-name" placeholder="Nombre de usuario" required/>
+                            <input type="password"  id="field-pass" placeholder="Contraseña" required/>
+                            <input type="password"  id="field-repass" placeholder="Repita la contraseña" required/>
+                            <input type="submit" id="btn-salvar" value="Crear cuenta" class="btn btn-primary btn-sm" />
                             <div class="remember-forgot">
+                                
+                                
                                 <div class="row">
                                     <div class="col-md-12 forgot-pass-content">
                                         <p>¿Tienes cuenta?    <br><a href="login.html" class="registro">¡Inicia Sesión aquí!</a></p>
+                                        
                                     </div>
                                 </div>
+                                
+                               
                             </div>
                         </form>
                     </div>
+
+
+                    <table id="table-register">
+                        <thead>
+                        <th>Nombre</th>
+                        <th>Contrasena</th>
+                        </thead>
+                        <tbody id="tbody-register">
+
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
